@@ -1,9 +1,9 @@
 <div class="container">
-	<?php if ($this->session->flashdata() ) : ?>
+	<?php if ($this->session->flashdata('flash') ) : ?>
 	<div class="row mt-3">
 		<div class="row mt-3">
 			<div class="alert alert-success alert-dismissible fade show" role="alert">
-			  Data mahasiswa <strong>Berhasil</strong> <?= $this->session->flashdata(); ?> .
+			  Data mahasiswa <strong>Berhasil</strong> <?= $this->session->flashdata('flash'); ?>.
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			    <span aria-hidden="true">&times;</span>
 			  </button>	
