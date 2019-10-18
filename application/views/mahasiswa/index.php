@@ -26,6 +26,9 @@
 			  <li class="list-group-item">
 			  	<?= $mhs['nama'] ?>
 			  	<a onclick="return confirm('yakin?');" href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" >hapus</a>
+			  	<a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs['id']; ?>" class="badge badge-success float-right" >ubah</a>
+			  	<a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right" >detail</a>
+
 			  	
 			  </li>
 			<?php endforeach; ?>
